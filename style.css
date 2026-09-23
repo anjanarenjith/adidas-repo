@@ -296,19 +296,341 @@ body {
 
 
 
-/* HERO */
 
-.hero {
 
-    height: 500px;
 
-    background-image: url("./hero.jpg");
+/* HERO SLIDER */
+
+.hero-slider {
+
+    width: 100%;
+
+    height: 600px;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+/*  ALL SLIDES */
+
+.slide {
+
+    position: absolute;
+
+    width: 100%;
+
+    height: 100%;
+
+    top: 0;
+
+    left: 0;
 
     background-size: cover;
 
     background-position: center;
 
+    opacity: 0;
+
+    animation: slideShow 15s infinite;
+
 }
+
+
+/* SLIDE IMAGES */
+
+.slide1 {
+
+    background-image: url("./hero\(1\).png");
+
+    animation-delay: 0s;
+
+}
+
+
+.slide2 {
+
+    background-image: url("./hero\(2\).png");
+
+    animation-delay: 5s;
+
+}
+
+
+.slide3 {
+
+    background-image: url("./hero\(3\).png");
+
+    animation-delay: 10s;
+
+}
+
+
+/* SLIDE ANIMATION */
+
+@keyframes slideShow {
+
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    35% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+}
+
+
+/*  HERO CONTENT */
+
+.hero-content {
+
+    position: absolute;
+
+    left: 60px;
+
+    bottom: 70px;
+
+    color: white;
+
+}
+
+
+.hero-content h1 {
+
+    font-size: 55px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.hero-content p {
+
+    font-size: 20px;
+
+    margin-bottom: 25px;
+
+}
+
+
+/*  BUTTONS */
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 10px;
+
+}
+
+
+.hero-buttons a {
+
+    display: inline-block;
+
+    background-color: white;
+
+    color: black;
+
+    padding: 14px 25px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+}
+
+
+.hero-buttons a:hover {
+
+    background-color: #ddd;
+
+}
+
+
+
+
+
+/*  PRODUCT SECTION */
+
+.product-section {
+    width: 100%;
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+
+/* TITLE */
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 7%;
+    margin-bottom: 30px;
+}
+
+.section-title h2 {
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.section-title a {
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/* CATEGORY BUTTONS */
+
+.category-buttons {
+    display: flex;
+    gap: 10px;
+
+    padding: 0 7%;
+    margin-bottom: 30px;
+
+    overflow-x: auto;
+}
+
+.category-buttons::-webkit-scrollbar {
+    display: none;
+}
+
+.category-buttons button {
+    padding: 10px 14px;
+
+    background-color: white;
+
+    border: 1px solid #999;
+
+    font-size: 16px;
+
+    white-space: nowrap;
+}
+
+.category-buttons .active {
+    background-color: black;
+    color: white;
+}
+
+
+/*  HORIZONTAL PRODUCT ROW */
+
+.product-row {
+    display: flex;
+
+    gap: 12px;
+
+    overflow-x: auto;
+
+    padding-left: 7%;
+    padding-right: 7%;
+
+    scrollbar-width: none;
+}
+
+.product-row::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* PRODUCT CARD */
+
+.product-card {
+    flex: 0 0 24%;
+    min-width: 280px;
+}
+
+
+/* PRODUCT IMAGE */
+
+.product-image {
+    position: relative;
+
+    width: 100%;
+    height: 400px;
+
+    background-color: #f2f3f4;
+
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* WISHLIST */
+
+.wishlist {
+    position: absolute;
+
+    top: 18px;
+    right: 18px;
+
+    z-index: 2;
+
+    border: none;
+
+    background: transparent;
+
+    font-size: 30px;
+
+    cursor: pointer;
+}
+
+
+/*  PRODUCT DETAILS */
+
+.product-details {
+    padding: 12px 8px;
+}
+
+.product-details h3 {
+    font-size: 16px;
+
+    margin-bottom: 14px;
+}
+
+.product-details p {
+    font-size: 16px;
+
+    margin-bottom: 15px;
+}
+
+.product-details span {
+    color: #777;
+
+    font-size: 15px;
+}
+
+
+
+
+
 
 
 
