@@ -756,37 +756,39 @@ body {
 
 
 
-/* ============================= */
-/* ADIDAS WALKING BANNER */
-/* ============================= */
+
+/* ADIDAS WALKING SECTION */
+
 
 .walking-banner {
     width: 100%;
     height: 750px;
-
     position: relative;
-
     overflow: hidden;
+    margin-top: 60px;
 }
 
 
-/* IMAGE */
+/* THREE IMAGES */
 
-.walking-banner img {
+.walking-images {
+    display: flex;
     width: 100%;
     height: 100%;
+}
 
+.walking-images img {
+    width: 33.333%;
+    height: 100%;
     object-fit: cover;
-
     display: block;
 }
 
 
-/* TEXT */
+/* TEXT ON TOP OF IMAGE */
 
 .walking-text {
     position: absolute;
-
     left: 7%;
     bottom: 70px;
 }
@@ -797,63 +799,700 @@ body {
 .walking-text h2 {
     background-color: white;
 
-    display: inline-block;
-
+    margin: 0 0 8px;
     padding: 5px 8px;
 
-    margin: 0 0 8px;
-
     font-size: 28px;
-
     letter-spacing: 2px;
 }
-
-
-/* DESCRIPTION */
 
 .walking-text p {
     background-color: white;
 
-    display: table;
-
-    padding: 4px 8px;
-
     margin: 0 0 20px;
+    padding: 4px 8px;
 
     font-size: 18px;
 }
-
-
-/* SHOP NOW BUTTON */
 
 .walking-text a {
     display: inline-flex;
 
     align-items: center;
+    justify-content: space-between;
 
     gap: 20px;
 
     background-color: white;
-
     color: black;
 
     padding: 12px 20px;
 
     text-decoration: none;
-
     font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* NEW IN FOOTBALL */
+
+
+.football-section {
+    width: 92%;
+
+    margin: 70px auto;
+}
+
+
+
+/* HEADING */
+
+
+.football-title {
+    margin-bottom: 30px;
+}
+
+.football-title h2 {
+    margin: 0;
+
+    font-size: 32px;
+
+    letter-spacing: 2px;
 
     font-weight: bold;
 }
 
 
-/* ARROW */
 
-.walking-text a span {
-    font-size: 25px;
+/* HORIZONTAL ROW */
+
+
+.football-row {
+    display: flex;
+
+    gap: 10px;
+
+    overflow-x: auto;
+
+    padding-bottom: 15px;
+
+    scroll-behavior: smooth;
 }
 
 
+/* CARD */
+
+
+.football-card {
+    flex: 0 0 360px;
+    width: 360px;
+    max-width: 360px;
+    min-width: 300px;
+
+    
+}
+
+
+/* IMAGE */
+
+
+.football-image {
+    width: 100%;
+
+    height: 480px;
+
+    overflow: hidden;
+
+    background-color: #f2f2f2;
+}
+
+
+/* IMAGE FIT */
+
+.football-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* DETAILS */
+
+
+.football-details {
+    padding: 15px 18px 10px;
+}
+
+
+/* TITLE */
+
+.football-details h3 {
+    margin: 0 0 15px;
+
+    font-size: 17px;
+
+    line-height: 1.4;
+
+    
+}
+
+
+/* DESCRIPTION */
+
+.football-details p {
+    margin: 0 0 22px;
+
+    font-size: 16px;
+
+    line-height: 1.5;
+
+    min-height: 52px;
+}
+
+
+/* SHOP NOW */
+
+.football-details a {
+    color: black;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    text-decoration: underline;
+}
+
+
+/* SCROLLBAR */
+
+
+.football-row::-webkit-scrollbar {
+    height: 8px;
+}
+
+.football-row::-webkit-scrollbar-track {
+    background: #eeeeee;
+}
+
+.football-row::-webkit-scrollbar-thumb {
+    background: #888888;
+}
+
+
+
+/* LINK SECTION */
+
+
+.link-section {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 49px;
+
+    padding: 60px 7%;
+
+    box-sizing: border-box;
+
+    background-color: white;
+}
+
+
+/* EACH COLUMN */
+
+
+.link-column {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+
+/* HEADING */
+
+
+.link-column h3 {
+    margin: 0 0 35px;
+
+    font-size: 15px;
+
+    font-weight:bold;
+}
+
+
+/* LINKS */
+
+
+.link-column a {
+    color: black;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    margin-bottom: 20px;
+}
+
+
+/* HOVER */
+
+.link-column a:hover {
+    text-decoration: underline;
+}
+
+
+/* ADIDAS SPORTS SHOP INFO */
+
+
+.sports-info {
+    width: 100%;
+    background-color: black;
+    color: white;
+
+    padding: 75px 20px 80px;
+
+    box-sizing: border-box;
+}
+
+
+
+/* CONTENT */
+
+
+.sports-info-content {
+    width: 60%;
+    max-width: 800px;
+
+    margin: 0 auto;
+}
+
+
+
+/* HEADING */
+
+
+.sports-info-content h2 {
+    margin: 0 0 35px;
+
+    text-align: center;
+
+    font-size: 26px;
+
+    line-height: 1.5;
+
+    letter-spacing: 1px;
+
+    font-weight: bold;
+}
+
+
+/* PARAGRAPHS */
+
+
+.sports-info-content p {
+    margin: 0 0 28px;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    letter-spacing: 0.3px;
+}
+
+
+
+/* ADIDAS LOGO */
+
+
+.sports-logo {
+    display: block;
+
+    width: 55px;
+
+    height: auto;
+
+    margin: 55px auto 0;
+
+    filter: invert(1);
+}
+
+/* ADIDAS FOOTER */
+
+
+.adidas-footer {
+    width: 100%;
+    margin-top: 0;
+}
+
+
+
+/* MEMBERSHIP BANNER */
+
+
+.member-banner {
+    background-color: #4a8f75;
+
+    min-height: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px 70px;
+
+    box-sizing: border-box;
+}
+
+
+/* MEMBERSHIP TEXT */
+
+.member-banner h2 {
+    color: white;
+
+    font-size: 28px;
+
+    letter-spacing: 2px;
+
+    font-weight: bold;
+
+    margin: 0;
+
+    text-align: center;
+}
+
+
+
+
+/* SIGN UP BUTTON */
+
+.signup-btn {
+    width: 300px;
+    height: 50px;
+
+    background-color: white;
+    color: black;
+
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 30px;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    position: relative;
+
+    border: none;
+
+    /* white layer behind */
+  
+
+    white-space: nowrap;
+}
+
+
+/* ARROW */
+
+.signup-btn span {
+    font-size: 32px;
+    font-weight: normal;
+    margin-left: 20px;
+}
+
+
+
+/* FOOTER LINKS */
+
+
+.footer-links {
+    background-color: #000000;
+
+    color: white;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(6, 1fr);
+
+    gap: 45px;
+
+    padding: 45px 5% 60px;
+
+    box-sizing: border-box;
+}
+
+
+
+/* FOOTER COLUMN */
+
+
+.footer-column {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+/* COLUMN HEADING */
+
+.footer-column h3 {
+    color: white;
+
+    font-size: 18px;
+
+    margin: 0 0 25px;
+
+    font-weight: bold;
+}
+
+
+/* FOOTER LINKS */
+
+.footer-column a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    line-height: 1.5;
+
+    margin-bottom: 20px;
+}
+
+
+/* HOVER */
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* INSTAGRAM */
+
+
+.follow-us .social-icon {
+    font-size: 30px;
+
+    margin-top: 5px;
+
+    margin-bottom: 0;
+
+    text-decoration: none;
+}
+
+
+.follow-us .social-icon:hover {
+    text-decoration: none;
+}
+
+
+
+
+/* BOTTOM FOOTER */
+
+
+.footer-bottom {
+    background-color: #000000;
+
+    color: white;
+
+    border-top: 1px solid #444;
+
+    text-align: center;
+
+    padding: 40px 20px 35px;
+
+    box-sizing: border-box;
+}
+
+
+/* LEGAL LINKS */
+
+.footer-bottom-links {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin-bottom: 40px;
+}
+
+
+/* LINKS */
+
+.footer-bottom-links a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    padding: 0 7px;
+
+    border-right: 1px solid white;
+}
+
+
+/* REMOVE BORDER FROM LAST LINK */
+
+.footer-bottom-links a:last-child {
+    border-right: none;
+}
+
+
+/* HOVER */
+
+.footer-bottom-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* COPYRIGHT */
+
+.footer-bottom p {
+    margin: 0;
+
+    font-size: 16px;
+
+    color: white;
+}
+
+/* RESPONSIVE */
+
+
+@media (max-width: 1000px) {
+
+    .member-banner {
+        flex-direction: column;
+
+        gap: 25px;
+
+        text-align: center;
+    }
+
+
+    .footer-links {
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 40px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .member-banner {
+        padding: 35px 20px;
+    }
+
+
+    .member-banner h2 {
+        font-size: 20px;
+
+        line-height: 1.4;
+    }
+
+
+    .signup-btn {
+        width: 220px;
+    }
+
+
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+
+        padding: 40px 25px;
+    }
+
+
+    .footer-column h3 {
+        font-size: 16px;
+    }
+
+
+    .footer-column a {
+        font-size: 14px;
+
+        margin-bottom: 15px;
+    }
+
+}
+
+
+
+/* MOBILE */
+
+
+@media (max-width: 768px) {
+
+    .sports-info {
+        padding: 50px 20px;
+    }
+
+    .sports-info-content {
+        width: 100%;
+    }
+
+    .sports-info-content h2 {
+        font-size: 28px;
+
+        line-height: 1.25;
+
+        margin-bottom: 30px;
+    }
+
+    .sports-info-content p {
+        font-size: 16px;
+
+        line-height: 1.5;
+    }
+
+}
+
+
+
+
+
+/* RESPONSIVE */
+
+
+@media (max-width: 768px) {
+
+    .link-section {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 40px 30px;
+
+        padding: 50px 30px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .link-section {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+        padding: 40px 25px;
+    }
+
+}
 
 
 
